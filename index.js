@@ -131,3 +131,7 @@ assert.strictEqual(
 );
 
 console.log("All good -- iterable ");
+
+// cabe destacar que, por cuestiones de tiempo, no he implementado validaciones de la entrada de datos
+// o bloques de código try catch con lanzamiento de errores en función del tipo de error
+// aunque quizás lo mejor sea simplemente usar TypeScript !!
