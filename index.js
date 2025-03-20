@@ -1,3 +1,4 @@
+// se trata de un arbol no binario, la recursión puede ser un buen inicio para tratar de resolverlo pero habría que conocer el volumen de datos que se maneja.
 const categories = [
   {
     name: "category1",
@@ -25,7 +26,7 @@ const categories = [
 
 // enfoque recursivo, podría llenar la pila de funciones en estructuras muy grandes y causar
 // un stack overflow, se podría resolver usando algoritmos algo más complejos como una pila
-// a modo de stack de funciones, de manera que la podamos manejar e ir vaciando.
+// a modo de stack de funciones y manteniendo la recursividad. Pero voy a hacer otro enfoque no recursivo.
 // También al ayudarnos de los return, se dificulta mucho escribir un mensaje de "No se ha encontrado",
 // aunque ésto se podría solucionar con estructuras de datos como objetos, cosa que no veo necesaria en éste caso.
 const getRecursiveCategoryPath = (categories, categoryName) => {
@@ -132,6 +133,9 @@ assert.strictEqual(
 
 console.log("All good -- iterable ");
 
-// cabe destacar que, por cuestiones de tiempo, no he implementado validaciones de la entrada de datos
-// o bloques de código try catch con lanzamiento de errores en función del tipo de error
+// cabe destacar que faltarían quizás implementar algún control de entrada de los atributos en las funciones
+// pero no creo que sea necesario para ésto.
+
 // aunque quizás lo mejor sea simplemente usar TypeScript !!
+
+// Gracias por atenderme y un saludo.
